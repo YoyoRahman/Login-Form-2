@@ -34,7 +34,7 @@ body {
 .login-header {
   position: relative;
   height: 14rem;
-  background: linear-gradient(to right, #88f7ff, #d37af9);
+  background: linear-gradient(to right, #0adceb, #d37af9);
   overflow: hidden;
 }
 
@@ -46,8 +46,53 @@ body {
     rgba(255, 255, 255, 0.04) 1px,
     transparent 0
   );
+  background-size: 24px 24px;
+  opacity: 0.1;
 }
 
 .blur-circle {
   position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  filter: blur(24px);
+}
+
+.blur-circle.right {
+  top: -2rem;
+  right: -2rem;
+}
+
+.blur-circle.left {
+  bottom: -2rem;
+  left: -2rem;
+}
+
+.header-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.icon-wrapper{
+    animation: bounce 2s infinite ;
+}
+
+.rocket-icon{
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(-45deg);
+}
+
+.header-content h2{
+    margin-top: 1rem;
+    font-size: 1.8rem
+    font-weight: bold;
+    animation:faceIn 0.5s ease-out;
 }
