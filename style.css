@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f3a6a6, #ffffff, #a5cde0);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.login-card {
+  min-width: 28rem;
+  width: 100%;
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: scale(1.02);
+}
+
+.login-header {
+  position: relative;
+  height: 14rem;
+  background: linear-gradient(to right, #88f7ff, #d37af9);
+  overflow: hidden;
+}
+
+.pattern-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle at 2px 2px,
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 0
+  );
+}
+
+.blur-circle {
+  position: absolute;
+}
